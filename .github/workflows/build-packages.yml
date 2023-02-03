@@ -1,10 +1,7 @@
 name: Build Packages
 on:
-  push:
-    branches: 
-      - build-package
-    tags:
-      - 'v*.*.*'
+  workflow_dispatch:
+
 jobs:
   main:
     runs-on: self-hosted
