@@ -11,7 +11,7 @@ jobs:
       - name: build deb
         run: |
           mkdir -p .debpkg/usr/share/cockpit
-          cp ./navigator .debpkg/usr/share/cockpit
+          cp -r ./navigator .debpkg/usr/share/cockpit
       - uses: jiro4989/build-deb-action@v2
         with:
           package: navigator
